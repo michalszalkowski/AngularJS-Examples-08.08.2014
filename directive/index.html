@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>AngularJS - Directive</title>
+</head>
+<body>
+
+<section ng-app="App">
+
+
+	<div ng-repeat="item in ['1','2','3']">{{item}}</div>
+
+	<div ng-init="data = [{'name':'1'},{'name':'2'},{'name':'3'}]">
+		<li ng-repeat="item in data">{{item.name}}</li>
+	</div>
+
+	<simple title="Lorem Ipsum" arr="[{name:'Lorem-1'},{name:'Lorem-2'},{name:'Lorem-3'}]"></simple>
+
+</section>
+
+
+<script src="../bower_components/angularjs/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

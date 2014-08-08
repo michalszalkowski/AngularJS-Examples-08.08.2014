@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>AngularJS - Images</title>
+	<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<section ng-app="App" class="container" style="padding-top: 50px">
+
+	<section ng-controller="ImagesCtrl">
+		<div ng-repeat="country in countries">
+			<h1>{{country.name}}</h1>
+			<img ng-src="img/{{country.file}}"/>
+		</div>
+	</section>
+
+</section>
+
+
+<script src="../bower_components/angularjs/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

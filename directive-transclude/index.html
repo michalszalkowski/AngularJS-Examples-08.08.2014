@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>AngularJS - Directive - Transclud</title>
+	<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<section ng-app="App" class="container">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">Example 1</div>
+		<div class="panel-body">
+			<simple title="Lorem Ipsum">
+				czesc
+			</simple>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">Example 2</div>
+		<div class="panel-body">
+			<simple title="Szałki">
+
+				<person person="{name:'Michał', surname:'Szałek'}">
+					<address city="Lubawa" street="Pawia 5"></address>
+				</person>
+
+				<person person="{name:'Michał 2', surname:'Szałek'}">
+					<address city="Lubawa" street="Pawia 5.5"></address>
+				</person>
+				<person person="{name:'Michał 2', surname:'Szałek'}"></person>
+			</simple>
+		</div>
+	</div>
+
+</section>
+
+
+<script src="../bower_components/angularjs/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
